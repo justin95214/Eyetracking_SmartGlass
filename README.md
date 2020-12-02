@@ -68,6 +68,15 @@
 - 샘플링을 통하여 원본 모델을 복원하는 RANSAC 알고리즘을 경계점 집합에 적용하여 동공 중심점을 획득한다.
 - 동공 좌표와 스크린의 좌표를 맵핑하는 Homography 행렬을 구하는 캘리브레이션 과정을 실행한다.
  
+ <순서도>
+  
+영상 이미지 >> 이미지 grey화 출력 >>  threshold로 이미지 이진화 >> 빛으로 인한 눈의 반사점 제거 후 >> 윤곽선검출 findContour() >> 윤곽선을 토대로 
+
+타원(원뿔) 방정식를 표현 >> 윤곽선에서  inlier와 outlier를 검출하여 오류가 적은 방정식을 표현하기 위해 Ransac알고리즘 활용 >> 방정식 파라미터를 구
+
+하기 위해 SVD 특이값분해 활용 >> 타원(원뿔)의 중심 검출 = 동공 좌표 
+ 
+ 
 
 ![eyetracking_process](readme_image/eyetracking_process.PNG)
 
