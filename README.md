@@ -18,6 +18,8 @@
 - 결과 : 우수논문발표상 
 
 #### ***(2020년 11월 20일 ~ 캘리브레이션 수정예정)***
+- calibration을 수동적으로 마우스로 좌표 체크보단, cross chess image를 통해서 보정작업을 진행이 정확도를 더 
+
 
 ## ■ 시연 영상
 - https://www.youtube.com/watch?v=rsepKaSXCls&feature=youtu.be // Youtube 시연영상
